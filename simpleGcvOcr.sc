@@ -73,9 +73,9 @@ def main(paths: String*): Unit =
     println(s"Sending ${urlRequests.size} urls " +
       s"and ${fileRequests.size} local files to GCV...")
 
-    //val response = request.send()
+    val response = request.send()
 
-    //File(outFile).writeAll(response.toString)
+    File(outFile).writeAll(response.toString)
 
     println("Saved response from GCV for " +
       s"${allRequests.size} requests to file '$outFile'.")
