@@ -89,7 +89,7 @@ val featureType = "DOCUMENT_TEXT_DETECTION"
 
 // Change these values if you want different paths to token or result file: 
 val tokenFile = ".gcv_token"
-val outFile = "out"
+val outFile   = "out.json"
 
 val helpMsg = 
   "simpleGcvOcr - Sends document text detection requests " +
