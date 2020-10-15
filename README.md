@@ -1,8 +1,9 @@
 # Simple GCV OCR Script
-Basic Scala script for sending image requests to Google's CloudVision OCR REST API.
-Creates an output file with the response from GCV containing all of the document texts with locations.
-Sends images either from local files or urls.
-Currently support only jpgs and pngs, you'll need to convert your pdf to multiple jpgs if you want to send it.
+Basic Scala script for sending image requests to Google's CloudVision OCR REST API.  
+Creates an output file with the response from GCV containing all of the document texts with locations.  
+
+Sends images either from local files or urls.  
+Currently support only jpgs and pngs, if you want to send your pdf using this script you'll need to convert it to multiple jpgs.
 
 
 ## What you need
