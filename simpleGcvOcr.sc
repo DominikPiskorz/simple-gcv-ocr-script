@@ -75,10 +75,15 @@ def main(paths: String*): Unit =
 
     val response = request.send()
 
-    File(outFile).writeAll(response.toString)
-
-    println("Saved response from GCV for " +
-      s"${allRequests.size} requests to file '$outFile'.")
+    response.body match {
+      case Right(texts) =>
+        File(outFile).writeAll(texts)
+        println("Saved response from GCV for " +
+          s"${allRequests.size} requests to file '$outFile'.")
+      case Left(err) =>
+        File(outFile).writeAll(err)
+        println("GCV returned error:\n" + err)
+    }
   }
 
 val gcvUri = uri"https://vision.googleapis.com/v1/images:annotate"
