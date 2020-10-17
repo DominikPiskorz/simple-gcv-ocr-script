@@ -1,0 +1,7 @@
+.ammonite
+.metals
+.vscode
+.gcv_token
+out
+*.jpg
+*.png
