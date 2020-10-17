@@ -40,4 +40,5 @@ val featureType = "TEXT_DETECTION"
 ```
 
 ## Dependancies
-Script uses [softwaremill/sttp](https://github.com/softwaremill/sttp) for creating and sending requests and [circe](https://circe.github.io/circe/) for JSON serialization.
+- [softwaremill/sttp](https://github.com/softwaremill/sttp) for creating and sending requests
+- [circe](https://circe.github.io/circe/) for JSON serialization.
